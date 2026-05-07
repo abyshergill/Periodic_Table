@@ -20,7 +20,7 @@ A beautiful, fully interactive periodic table built with pure **HTML, CSS, and J
 |---|---|
 | All 118 elements color-coded by category | Animated electron orbitals + full properties |
 
-![](assests\Periodic_Table.jpg)
+![](assests/Periodic_Table.jpg)
 
 ---
 
