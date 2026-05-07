@@ -41,7 +41,7 @@ A beautiful, fully interactive periodic table built with pure **HTML, CSS, and J
 
 ## 🚀 Getting Started
 
-### Option 1 — Open Locally
+###  Run Locally
 
 ```bash
 # Clone the repository
@@ -52,14 +52,8 @@ cd Periodic_Table
 # Open in your browser
 open index.html
 ```
-
-### Option 2 — Host on GitHub Pages
-
-1. Push this repository to GitHub
-2. Go to **Settings → Pages**
-3. Under **Source**, select `main` branch and `/ (root)`
-4. Click **Save** — your site will be live in a few seconds
-
+### Run on Web (Github Pages)
+👉 **[View Live on GitHub Pages](https://abyshergill.github.io/Periodic_Table/)**
 ---
 
 ## 🧒 What Children Can Learn
