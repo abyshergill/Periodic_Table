@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Periodic Table</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>⚛ Interactive Periodic Table</h1>
+  <p class="subtitle">Click any element to visualize its electron orbitals and explore its properties</p>
+</header>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div>Alkali Metal</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f97316"></div>Alkaline Earth</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#3b82f6"></div>Transition Metal</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#14b8a6"></div>Post-Transition</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#a855f7"></div>Metalloid</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div>Nonmetal</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#eab308"></div>Halogen</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#06b6d4"></div>Noble Gas</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ec4899"></div>Lanthanide</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f43f5e"></div>Actinide</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#8b5cf6"></div>Unknown</div>
+</div>
+
+<div class="table-wrapper">
+  <div class="periodic-table" id="periodicTable"></div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <div class="modal-hdr">
+      <div class="modal-title-row">
+        <div class="el-badge" id="elBadge">
+          <span class="badge-num" id="bNum"></span>
+          <span class="badge-sym" id="bSym"></span>
+          <span class="badge-name" id="bName"></span>
+        </div>
+        <div class="modal-meta">
+          <h2 id="mFullName"></h2>
+          <div class="cat-label" id="mCat"></div>
+          <div class="state-row" id="mState"></div>
+        </div>
+      </div>
+      <button class="close-btn" id="closeBtn" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="atom-viz">
+        <h4>Electron Orbitals</h4>
+        <canvas id="atomCanvas" width="161" height="161"></canvas>
+        <div class="electron-total">
+          <strong id="eTotalNum">0</strong>total electrons
+        </div>
+        <div class="shell-tags" id="shellTags"></div>
+      </div>
+      <div class="info-col">
+        <div class="info-panel">
+          <h4>Physical Properties</h4>
+          <div class="info-row"><span class="lbl">Atomic Mass</span><span class="val" id="pMass">—</span></div>
+          <div class="info-row"><span class="lbl">Density</span><span class="val" id="pDensity">—</span></div>
+          <div class="info-row"><span class="lbl">Melting Point</span><span class="val" id="pMelt">—</span></div>
+          <div class="info-row"><span class="lbl">Boiling Point</span><span class="val" id="pBoil">—</span></div>
+        </div>
+        <div class="info-panel">
+          <h4>Atomic Properties</h4>
+          <div class="info-row"><span class="lbl">Atomic Number</span><span class="val" id="aAN">—</span></div>
+          <div class="info-row"><span class="lbl">Period / Block</span><span class="val" id="aPB">—</span></div>
+          <div class="info-row"><span class="lbl">Electronegativity</span><span class="val" id="aEN">—</span></div>
+          <div class="info-row"><span class="lbl">Electron Config</span><span class="val" id="aCfg" style="font-size:0.68rem">—</span></div>
+        </div>
+        <div class="info-panel">
+          <h4>Discovery</h4>
+          <div class="info-row"><span class="lbl">Discovered By</span><span class="val" id="dBy" style="font-size:0.7rem;max-width:56%">—</span></div>
+          <div class="info-row"><span class="lbl">Year</span><span class="val" id="dYr">—</span></div>
+        </div>
+      </div>
+      <div class="modal-desc" id="mDesc"></div>
+    </div>
+  </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>
