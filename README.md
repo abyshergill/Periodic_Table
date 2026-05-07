@@ -21,6 +21,7 @@ A beautiful, fully interactive periodic table built with pure **HTML, CSS, and J
 | All 118 elements color-coded by category | Animated electron orbitals + full properties |
 
 ![](assests\Periodic_Table.jpg)
+
 ---
 
 ## ✨ Features
@@ -44,11 +45,10 @@ A beautiful, fully interactive periodic table built with pure **HTML, CSS, and J
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/abyshergill/Periodic_Table.git
 
 # Navigate into the folder
-cd your-repo-name
-
+cd Periodic_Table
 # Open in your browser
 open index.html
 ```
