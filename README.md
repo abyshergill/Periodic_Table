@@ -8,7 +8,7 @@ A beautiful, fully interactive periodic table built with pure **HTML, CSS, and J
 
 ## 🌐 Live Demo
 
-👉 **[View Live on GitHub Pages](https://your-username.github.io/your-repo-name/)**
+👉 **[View Live on GitHub Pages](https://abyshergill.github.io/Periodic_Table/)**
 
 > Replace the link above with your actual hosted URL after deployment.
 
