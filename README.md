@@ -10,8 +10,6 @@ A beautiful, fully interactive periodic table built with pure **HTML, CSS, and J
 
 👉 **[View Live on GitHub Pages](https://abyshergill.github.io/Periodic_Table/)**
 
-> Replace the link above with your actual hosted URL after deployment.
-
 ---
 
 ## 📸 Preview
